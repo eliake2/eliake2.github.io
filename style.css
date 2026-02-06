@@ -3,44 +3,51 @@ body{
     height: 100vh;
 }
 
-header{
-    grid-area: h;
-    background-color: pink;
+header{ 
+    grid-area: h; 
+  
 }
 main{
     grid-area: m;
-    background-color: green;
+ 
 }
 aside{
     grid-area: a;
-    background-color: aquamarine;
+  
 }
 footer{
     grid-area: f;
-    background-color: blue;
+    
 }
+#logo{
+
+    grid-area: l;
+}
+
+
 
 #container{
     display: grid;
-    height:200%;
+    height:100%;
     grid-template-columns: 3% 30% 3% 30% 3% 30%;
-    grid-template-rows:20% 60% 20% 40%;
+    grid-template-rows: 20% 20% 60% 20% 40%;
 
     grid-template-areas:
-    
-    ". h . m . a" 
-    ". . . . . ."
-    "f f . . . ."
-    "f f . . . .";
+    "h h h h h l"
+    ". . . . . ." 
+    ". f . a . m"
+    ". f . a . m"
+    ". f . a . m";
 }
 
 @media screen and (max-width:800px){
 
 #container{
 
-    grid-template-rows:100% 100% 100% 100% 100%;
+    grid-template-rows:30% 100% 100% 100% 100% 100%;
 
     grid-template-areas:  
+    "l l l"
     "h h h"
     "m m m"
     "a a a"
@@ -48,3 +55,102 @@ footer{
     "f f f";
 }
 }
+
+
+    html{
+
+        font-size: 16px;
+    }
+
+
+
+    h1{
+
+        font-size: 3rem;
+ 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 15px;
+        letter-spacing: 3px;
+
+    }
+
+    
+
+    
+    
+    body{
+
+        background-color: rgb(193, 193, 193);
+        
+        
+    }
+
+
+
+h1 {
+  font-family: 'Allura', cursive;
+}
+
+
+
+p{
+
+font-size: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+
+}
+
+#red{
+
+color: red;
+
+}
+
+
+h2 { 
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 300px
+    
+    
+
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    letter-spacing: 0.1rem;
+    line-height: 40px;
+    background-color: rgb(148, 203, 157);
+    font-size: 25px
+
+    
+    
+}
+h4 {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 300px;
+    font-size: 17px;
+
+
+}
+
+h5 {
+    line-height: 150px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+  
+
+
+}
+
+
+
+
+
+
+
